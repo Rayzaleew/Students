@@ -9,7 +9,7 @@ namespace Students
 {
     internal class DataBase
     {
-        SQLiteConnection connection = new SQLiteConnection(@"data source = C:\Users\SerG\source\repos\Students\Students\databse.db");
+        SQLiteConnection connection = new SQLiteConnection(@"data source = database.db");
 
         public SQLiteConnection getConnection()
         {
