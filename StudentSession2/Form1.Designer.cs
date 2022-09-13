@@ -38,7 +38,6 @@
             this.button_new = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.buttonChange = new System.Windows.Forms.Button();
-            this.buttonUpdate = new System.Windows.Forms.Button();
             this.Button_update = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_exam3 = new System.Windows.Forms.TextBox();
@@ -90,7 +89,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(932, 270);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox_id
             // 
@@ -123,7 +121,6 @@
             this.textBox_exam1.Name = "textBox_exam1";
             this.textBox_exam1.Size = new System.Drawing.Size(100, 26);
             this.textBox_exam1.TabIndex = 7;
-            this.textBox_exam1.TextChanged += new System.EventHandler(this.textBox_exam1_TextChanged);
             // 
             // textBox_exam2
             // 
@@ -166,17 +163,6 @@
             this.buttonChange.UseVisualStyleBackColor = true;
             this.buttonChange.Click += new System.EventHandler(this.buttonChange_Click);
             // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonUpdate.Location = new System.Drawing.Point(418, 189);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(170, 26);
-            this.buttonUpdate.TabIndex = 12;
-            this.buttonUpdate.Text = "Сохранить";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
             // Button_update
             // 
             this.Button_update.BackColor = System.Drawing.Color.LightPink;
@@ -199,7 +185,6 @@
             this.label1.Size = new System.Drawing.Size(21, 20);
             this.label1.TabIndex = 14;
             this.label1.Text = "id";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox_exam3
             // 
@@ -228,7 +213,7 @@
             // textBox_offset2
             // 
             this.textBox_offset2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_offset2.Location = new System.Drawing.Point(245, 127);
+            this.textBox_offset2.Location = new System.Drawing.Point(218, 127);
             this.textBox_offset2.Name = "textBox_offset2";
             this.textBox_offset2.Size = new System.Drawing.Size(100, 26);
             this.textBox_offset2.TabIndex = 18;
@@ -236,7 +221,7 @@
             // textBox_offset1
             // 
             this.textBox_offset1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_offset1.Location = new System.Drawing.Point(245, 95);
+            this.textBox_offset1.Location = new System.Drawing.Point(218, 92);
             this.textBox_offset1.Name = "textBox_offset1";
             this.textBox_offset1.Size = new System.Drawing.Size(100, 26);
             this.textBox_offset1.TabIndex = 19;
@@ -244,7 +229,7 @@
             // textBox_offset3
             // 
             this.textBox_offset3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_offset3.Location = new System.Drawing.Point(245, 159);
+            this.textBox_offset3.Location = new System.Drawing.Point(218, 159);
             this.textBox_offset3.Name = "textBox_offset3";
             this.textBox_offset3.Size = new System.Drawing.Size(100, 26);
             this.textBox_offset3.TabIndex = 20;
@@ -252,7 +237,7 @@
             // textBox_offset4
             // 
             this.textBox_offset4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_offset4.Location = new System.Drawing.Point(245, 191);
+            this.textBox_offset4.Location = new System.Drawing.Point(218, 189);
             this.textBox_offset4.Name = "textBox_offset4";
             this.textBox_offset4.Size = new System.Drawing.Size(100, 26);
             this.textBox_offset4.TabIndex = 21;
@@ -283,19 +268,19 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(61, 69);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 20);
+            this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 26;
-            this.label5.Text = "Экзамены (0 до 100)";
+            this.label5.Text = "Экзамены";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(241, 72);
+            this.label6.Location = new System.Drawing.Point(217, 69);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 20);
+            this.label6.Size = new System.Drawing.Size(67, 20);
             this.label6.TabIndex = 27;
-            this.label6.Text = "Зачеты (0 или 1)";
+            this.label6.Text = "Зачеты";
             // 
             // label7
             // 
@@ -336,7 +321,6 @@
             this.label10.Size = new System.Drawing.Size(18, 20);
             this.label10.TabIndex = 32;
             this.label10.Text = "5";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
@@ -347,16 +331,14 @@
             this.label11.Size = new System.Drawing.Size(18, 20);
             this.label11.TabIndex = 31;
             this.label11.Text = "4";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // textBox_offset5
             // 
             this.textBox_offset5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_offset5.Location = new System.Drawing.Point(245, 223);
+            this.textBox_offset5.Location = new System.Drawing.Point(218, 221);
             this.textBox_offset5.Name = "textBox_offset5";
             this.textBox_offset5.Size = new System.Drawing.Size(100, 26);
             this.textBox_offset5.TabIndex = 33;
-            this.textBox_offset5.TextChanged += new System.EventHandler(this.textBox_offset5_TextChanged);
             // 
             // buttonNON
             // 
@@ -374,9 +356,8 @@
             this.textBox_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_del.Location = new System.Drawing.Point(598, 125);
             this.textBox_del.Name = "textBox_del";
-            this.textBox_del.Size = new System.Drawing.Size(256, 26);
+            this.textBox_del.Size = new System.Drawing.Size(319, 26);
             this.textBox_del.TabIndex = 35;
-            this.textBox_del.TextChanged += new System.EventHandler(this.textBox_del_TextChanged);
             // 
             // label4
             // 
@@ -393,7 +374,7 @@
             this.buttonDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDel.Location = new System.Drawing.Point(598, 157);
             this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Size = new System.Drawing.Size(256, 26);
+            this.buttonDel.Size = new System.Drawing.Size(319, 26);
             this.buttonDel.TabIndex = 37;
             this.buttonDel.Text = "Удалить группу";
             this.buttonDel.UseVisualStyleBackColor = true;
@@ -408,14 +389,13 @@
             this.label12.Size = new System.Drawing.Size(323, 20);
             this.label12.TabIndex = 38;
             this.label12.Text = "Введите группу, которую хотите удалить";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(598, 220);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(252, 26);
+            this.button1.Size = new System.Drawing.Size(319, 26);
             this.button1.TabIndex = 39;
             this.button1.Text = "Сохранить данные студента";
             this.button1.UseVisualStyleBackColor = true;
@@ -447,7 +427,6 @@
             this.panel1.Controls.Add(this.textBox_exam4);
             this.panel1.Controls.Add(this.textBox_exam3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.buttonUpdate);
             this.panel1.Controls.Add(this.buttonChange);
             this.panel1.Controls.Add(this.button_delete);
             this.panel1.Controls.Add(this.button_new);
@@ -495,7 +474,6 @@
         private System.Windows.Forms.Button button_new;
         private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Button buttonChange;
-        private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button Button_update;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox_exam3;
